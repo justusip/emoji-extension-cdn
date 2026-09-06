@@ -1,0 +1,5 @@
+# Build scratch: downloaded upstream fonts and QA artifacts.
+# Never commit these — they blow past jsDelivr's 150 MB package limit.
+build/
+__pycache__/
+*.pyc

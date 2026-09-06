@@ -1,0 +1,80 @@
+{
+  "$comment": [
+    "Source manifest for the emoji CDN. `build_all.py` reads this, downloads each",
+    "upstream font, optimises it for browser delivery, and writes fonts/<id>.woff2",
+    "plus a generated manifest.json.",
+    "",
+    "jsDelivr hard limits (https://github.com/jsdelivr/jsdelivr#configuring-a-default-file):",
+    "  - single file (GitHub):  20 MB",
+    "  - whole repo at a tag:  150 MB",
+    "Every entry must stay under max_bytes; build_all.py fails the build otherwise."
+  ],
+  "max_file_bytes": 19000000,
+  "max_total_bytes": 140000000,
+  "fonts": [
+    {
+      "id": "apple-emoji",
+      "title": "Apple Emoji",
+      "description": "The iconic Apple emoji set brought to Windows and Linux. Built from the macOS 26 (Tahoe) system font, so it matches current iOS/macOS artwork.",
+      "homepage": "https://github.com/samuelngs/apple-emoji-ttf",
+      "license": "Proprietary — Apple Inc. Redistribution is not licensed; see LICENSES.md.",
+      "builder": "build_apple_emoji",
+      "optimize": { "bitmap_ppem": 96, "quantize_colors": 256 }
+    },
+    {
+      "id": "microsoft-fluent-color-emoji",
+      "title": "Microsoft Fluent Color Emoji",
+      "description": "Microsoft's modern 3D-style emoji set for Windows 11, featuring soft gradients and rounded, bubbly forms.",
+      "homepage": "https://github.com/microsoft/fluentui-emoji",
+      "license": "MIT (artwork: Microsoft)",
+      "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiColor.ttf",
+      "optimize": { "prefer_color_table": "COLR" }
+    },
+    {
+      "id": "google-noto-color-emoji",
+      "title": "Google Noto Color Emoji",
+      "description": "Google's official color emoji font used on Android and ChromeOS. Known for high legibility and a clean, modern style.",
+      "homepage": "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
+      "license": "OFL-1.1",
+      "url": "https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf",
+      "optimize": { "quantize_colors": 256 }
+    },
+    {
+      "id": "google-blobmoji",
+      "title": "Google Blobmoji",
+      "description": "A revival of Google's classic 'gumdrop' or 'blob' style emojis from older Android versions, updated to support modern Unicode standards.",
+      "homepage": "https://github.com/C1710/blobmoji",
+      "license": "Apache-2.0 / OFL-1.1",
+      "url": "https://github.com/C1710/blobmoji/raw/refs/heads/main/fonts/Blobmoji.ttf",
+      "optimize": { "quantize_colors": 256 }
+    },
+    {
+      "id": "twemoji",
+      "title": "Twemoji",
+      "description": "Originally designed by Twitter, now community-maintained. It features a recognizable flat, simple design favored by Discord and many web apps.",
+      "homepage": "https://github.com/mozilla/twemoji-colr",
+      "license": "CC-BY-4.0 (artwork) / MIT (code)",
+      "url": "https://github.com/mozilla/twemoji-colr/releases/download/v0.7.0/Twemoji.Mozilla.ttf",
+      "note": "COLR/CPAL build. The upstream jdecked/twemoji webfont is OT-SVG only, which Chrome does not render — it falls back to black outlines. Do not switch back to it.",
+      "optimize": { "prefer_color_table": "COLR" }
+    },
+    {
+      "id": "openmoji-color",
+      "title": "OpenMoji Color",
+      "description": "An independent, open-source emoji set with a distinct hand-drawn aesthetic and thick black outlines.",
+      "homepage": "https://openmoji.org/",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://github.com/hfg-gmuend/openmoji/raw/refs/heads/master/font/OpenMoji-color-colr0_svg/OpenMoji-color-colr0_svg.woff2",
+      "optimize": { "prefer_color_table": "COLR" }
+    },
+    {
+      "id": "openmoji-black",
+      "title": "OpenMoji Black",
+      "description": "The monochrome, outline-only variant of the OpenMoji project, focusing on geometric simplicity.",
+      "homepage": "https://openmoji.org/",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://github.com/hfg-gmuend/openmoji/raw/refs/heads/master/font/OpenMoji-black-glyf/OpenMoji-black-glyf.woff2",
+      "optimize": {}
+    }
+  ]
+}

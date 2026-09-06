@@ -1,0 +1,142 @@
+{
+  "generated": "2026-09-06T03:29:44Z",
+  "total_bytes": 29830044,
+  "fonts": [
+    {
+      "id": "apple-emoji",
+      "title": "Apple Emoji",
+      "description": "The iconic Apple emoji set brought to Windows and Linux. Built from the macOS 26 (Tahoe) system font, so it matches current iOS/macOS artwork.",
+      "homepage": "https://github.com/samuelngs/apple-emoji-ttf",
+      "license": "Proprietary \u2014 Apple Inc. Redistribution is not licensed; see LICENSES.md.",
+      "file": "fonts/apple-emoji.woff2",
+      "bytes": 10051572,
+      "sha256": "0c451fb19b80277d6c3a3c5259e8f1ce81e2f2517a9a3dc4e0ef892be2ef7362",
+      "upstream": {
+        "release": "macos-26-20260722-484daf4e",
+        "url": "https://github.com/samuelngs/apple-emoji-ttf/releases/download/macos-26-20260722-484daf4e/AppleColorEmoji-Linux.ttf"
+      },
+      "color_tables": [
+        "CBDT"
+      ],
+      "codepoints": 1469,
+      "glyphs": 3844,
+      "has_gsub": true,
+      "bitmap_ppem": 96
+    },
+    {
+      "id": "microsoft-fluent-color-emoji",
+      "title": "Microsoft Fluent Color Emoji",
+      "description": "Microsoft's modern 3D-style emoji set for Windows 11, featuring soft gradients and rounded, bubbly forms.",
+      "homepage": "https://github.com/microsoft/fluentui-emoji",
+      "license": "MIT (artwork: Microsoft)",
+      "file": "fonts/microsoft-fluent-color-emoji.woff2",
+      "bytes": 2967156,
+      "sha256": "7baa833614bac6a272d592c7c23bfa50eddf2265068f5f14c8761824b1994815",
+      "upstream": {
+        "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiColor.ttf"
+      },
+      "color_tables": [
+        "COLR"
+      ],
+      "codepoints": 1395,
+      "glyphs": 33351,
+      "has_gsub": true
+    },
+    {
+      "id": "google-noto-color-emoji",
+      "title": "Google Noto Color Emoji",
+      "description": "Google's official color emoji font used on Android and ChromeOS. Known for high legibility and a clean, modern style.",
+      "homepage": "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
+      "license": "OFL-1.1",
+      "file": "fonts/google-noto-color-emoji.woff2",
+      "bytes": 8041004,
+      "sha256": "caabca7d043f4581353eb4b939d664407c20e3e2b40435709a0cd43bcbd5a273",
+      "upstream": {
+        "url": "https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf"
+      },
+      "color_tables": [
+        "CBDT"
+      ],
+      "codepoints": 1501,
+      "glyphs": 4027,
+      "has_gsub": true,
+      "bitmap_ppem": 109
+    },
+    {
+      "id": "google-blobmoji",
+      "title": "Google Blobmoji",
+      "description": "A revival of Google's classic 'gumdrop' or 'blob' style emojis from older Android versions, updated to support modern Unicode standards.",
+      "homepage": "https://github.com/C1710/blobmoji",
+      "license": "Apache-2.0 / OFL-1.1",
+      "file": "fonts/google-blobmoji.woff2",
+      "bytes": 6742228,
+      "sha256": "c0f0a77b44c14319c9eccf44ffd572c9c593f37cd2a22c493034b7d344d4660d",
+      "upstream": {
+        "url": "https://github.com/C1710/blobmoji/raw/refs/heads/main/fonts/Blobmoji.ttf"
+      },
+      "color_tables": [
+        "CBDT"
+      ],
+      "codepoints": 1488,
+      "glyphs": 4166,
+      "has_gsub": true,
+      "bitmap_ppem": 110
+    },
+    {
+      "id": "twemoji",
+      "title": "Twemoji",
+      "description": "Originally designed by Twitter, now community-maintained. It features a recognizable flat, simple design favored by Discord and many web apps.",
+      "homepage": "https://github.com/mozilla/twemoji-colr",
+      "license": "CC-BY-4.0 (artwork) / MIT (code)",
+      "file": "fonts/twemoji.woff2",
+      "bytes": 460192,
+      "sha256": "15c4e9fcd87a4193f056bacb426873e4af7bc27da2fae46b96c3ea6581ba6f6d",
+      "upstream": {
+        "url": "https://github.com/mozilla/twemoji-colr/releases/download/v0.7.0/Twemoji.Mozilla.ttf"
+      },
+      "color_tables": [
+        "COLR"
+      ],
+      "codepoints": 1418,
+      "glyphs": 13723,
+      "has_gsub": true,
+      "note": "COLR/CPAL build. The upstream jdecked/twemoji webfont is OT-SVG only, which Chrome does not render \u2014 it falls back to black outlines. Do not switch back to it."
+    },
+    {
+      "id": "openmoji-color",
+      "title": "OpenMoji Color",
+      "description": "An independent, open-source emoji set with a distinct hand-drawn aesthetic and thick black outlines.",
+      "homepage": "https://openmoji.org/",
+      "license": "CC-BY-SA-4.0",
+      "file": "fonts/openmoji-color.woff2",
+      "bytes": 1015536,
+      "sha256": "82a9a3bcdc82fcfe9efb4b9bbb0c9264234fc49928bfa0c06555b29e355690d5",
+      "upstream": {
+        "url": "https://github.com/hfg-gmuend/openmoji/raw/refs/heads/master/font/OpenMoji-color-colr0_svg/OpenMoji-color-colr0_svg.woff2"
+      },
+      "color_tables": [
+        "COLR"
+      ],
+      "codepoints": 1958,
+      "glyphs": 42404,
+      "has_gsub": true
+    },
+    {
+      "id": "openmoji-black",
+      "title": "OpenMoji Black",
+      "description": "The monochrome, outline-only variant of the OpenMoji project, focusing on geometric simplicity.",
+      "homepage": "https://openmoji.org/",
+      "license": "CC-BY-SA-4.0",
+      "file": "fonts/openmoji-black.woff2",
+      "bytes": 552356,
+      "sha256": "2a13c9b4cf30801c95fffaed6bb553a2db732e7644f79c0043e91d34f7820d04",
+      "upstream": {
+        "url": "https://github.com/hfg-gmuend/openmoji/raw/refs/heads/master/font/OpenMoji-black-glyf/OpenMoji-black-glyf.woff2"
+      },
+      "color_tables": [],
+      "codepoints": 1958,
+      "glyphs": 15422,
+      "has_gsub": true
+    }
+  ]
+}

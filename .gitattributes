@@ -1,0 +1,5 @@
+# Fonts are binary. Without this, git on Windows can corrupt them via
+# CRLF translation and every rebuild shows as a full-file diff.
+*.woff2 binary
+*.ttf   binary
+*.png   binary
