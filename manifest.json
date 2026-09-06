@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06T06:54:28Z",
+  "generated": "2026-09-06T06:55:53Z",
   "total_bytes": 26613920,
   "fonts": [
     {
@@ -41,7 +41,8 @@
       "codepoints": 1395,
       "glyphs": 33351,
       "has_gsub": true,
-      "note": "No flags: the Fluent set has no regional indicator glyphs."
+      "note": "No flags: the Fluent set has no regional indicator glyphs, so country flags come from the noto-flags-only helper.",
+      "flags_from": "noto-flags-only"
     },
     {
       "id": "microsoft-fluent-flat-emoji",
@@ -61,7 +62,8 @@
       "codepoints": 1395,
       "glyphs": 13248,
       "has_gsub": true,
-      "note": "No flags: the Fluent set has no regional indicator glyphs."
+      "note": "No flags: the Fluent set has no regional indicator glyphs, so country flags come from the noto-flags-only helper.",
+      "flags_from": "noto-flags-only"
     },
     {
       "id": "microsoft-fluent-high-contrast-emoji",
@@ -81,8 +83,9 @@
       "codepoints": 1395,
       "glyphs": 7725,
       "has_gsub": true,
-      "note": "No flags: the Fluent set has no regional indicator glyphs.",
-      "monochrome": true
+      "note": "No flags: the Fluent set has no regional indicator glyphs, so country flags come from the noto-flags-only helper.",
+      "monochrome": true,
+      "flags_from": "noto-flags-only"
     },
     {
       "id": "google-noto-color-emoji",
