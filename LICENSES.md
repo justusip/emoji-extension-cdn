@@ -44,6 +44,7 @@ which republishes the macOS system font.
 | Microsoft Fluent High Contrast | MIT | Microsoft |
 | Google Noto Color Emoji | OFL-1.1 | Google |
 | Noto Emoji Mono | OFL-1.1 | Google |
+| Noto Flags (helper) | OFL-1.1 | Google |
 | Google Blobmoji | Apache-2.0 / OFL-1.1 | Google, C1710 |
 | Twemoji | CC-BY-4.0 (artwork), MIT (code) | **Yes** — Twitter / jdecked |
 | OpenMoji Color | CC-BY-SA-4.0 | **Yes** — OpenMoji |
