@@ -242,6 +242,12 @@ def recode_bitmaps(font, report, colors=256, target_ppem=None):
 
 
 def save_woff2(font, out_path, report):
+    # Reproducible builds. fontTools stamps head.modified with the current
+    # time on every save, so an otherwise byte-identical rebuild rewrites
+    # every file: 26 MB of meaningless git churn, and manifest.json hashes
+    # that no longer match what a published tag is serving. Nothing on the
+    # web reads this timestamp.
+    font.recalcTimestamp = False
     font.flavor = "woff2"
     font.save(out_path)
     size = os.path.getsize(out_path)

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-06T05:05:25Z",
-  "total_bytes": 26136928,
+  "generated": "2026-09-06T06:32:35Z",
+  "total_bytes": 26136764,
   "fonts": [
     {
       "id": "apple-emoji",
@@ -9,8 +9,8 @@
       "homepage": "https://github.com/samuelngs/apple-emoji-ttf",
       "license": "Proprietary \u2014 Apple Inc. Redistribution is not licensed; see LICENSES.md.",
       "file": "fonts/apple-emoji.woff2",
-      "bytes": 10051472,
-      "sha256": "d8006e264d4d2b22da9f9b5a1a7b9394ffcf30c8554d90aa9bedaaac5868a9e3",
+      "bytes": 10051352,
+      "sha256": "567ea2cfe108f476bcacb93cfeb319110525e73670662c9adc38dda8737bf3e1",
       "upstream": {
         "release": "macos-26-20260722-484daf4e",
         "url": "https://github.com/samuelngs/apple-emoji-ttf/releases/download/macos-26-20260722-484daf4e/AppleColorEmoji-Linux.ttf"
@@ -25,13 +25,13 @@
     },
     {
       "id": "microsoft-fluent-color-emoji",
-      "title": "Microsoft Fluent 3D",
+      "title": "Fluent 3D",
       "description": "Microsoft's modern 3D-style emoji set for Windows 11, featuring soft gradients and rounded, bubbly forms.",
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
       "file": "fonts/microsoft-fluent-color-emoji.woff2",
-      "bytes": 2967544,
-      "sha256": "2af2d6634289a86995b1521f620736f230db1a3a8ea135914ba1efc505ad28dd",
+      "bytes": 2968136,
+      "sha256": "f9c1eff218176d47fd3716dd528be512517bd12f09d8da45f227be69e4de464d",
       "upstream": {
         "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiColor.ttf"
       },
@@ -45,13 +45,13 @@
     },
     {
       "id": "microsoft-fluent-flat-emoji",
-      "title": "Microsoft Fluent Flat",
+      "title": "Fluent Flat",
       "description": "The flat variant of Microsoft's Fluent set \u2014 the same artwork drawn without gradients or depth, for a cleaner 2D look.",
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
       "file": "fonts/microsoft-fluent-flat-emoji.woff2",
-      "bytes": 535052,
-      "sha256": "74b40d150cbb26a1b27f53fa1221b49fb7ef056469bc88de5c553822554426d7",
+      "bytes": 535516,
+      "sha256": "23f0ddcf708ca24102c8d47781ac8cde8d98cafa4401bd6b589677c0016add86",
       "upstream": {
         "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiFlat.ttf"
       },
@@ -65,13 +65,13 @@
     },
     {
       "id": "microsoft-fluent-high-contrast-emoji",
-      "title": "Microsoft Fluent High Contrast",
+      "title": "Fluent High Contrast",
       "description": "Microsoft's accessibility variant: bold monochrome line art that stays legible at small sizes and in high-contrast modes.",
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
       "file": "fonts/microsoft-fluent-high-contrast-emoji.woff2",
-      "bytes": 522240,
-      "sha256": "7193e6fdbd95e93e399e04fbe1e1484cbdd467f0599c301fe139d68fc7f633f8",
+      "bytes": 522104,
+      "sha256": "92b80e3f98558c48d82b77c6b03916845bd79fc63ae96590fecaf9dab365f3de",
       "upstream": {
         "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiHighContrast.ttf"
       },
@@ -86,13 +86,13 @@
     },
     {
       "id": "google-noto-color-emoji",
-      "title": "Google Noto Color",
+      "title": "Noto Color",
       "description": "Google's official color emoji font used on Android and ChromeOS. Known for high legibility and a clean, modern style.",
       "homepage": "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
       "license": "OFL-1.1",
       "file": "fonts/google-noto-color-emoji.woff2",
-      "bytes": 1973228,
-      "sha256": "d9eef68c48ef1f221fd0bdcb98697b5ecf89cdb2b66a2baba73e46c5cf010c7c",
+      "bytes": 1972940,
+      "sha256": "eea43aa18f7ae8ac50828d3b0907d2a881d0896a8ca4f5f6da471beecc7c13a2",
       "upstream": {
         "url": "https://github.com/googlefonts/noto-emoji/raw/main/fonts/Noto-COLRv1.ttf"
       },
@@ -111,8 +111,8 @@
       "homepage": "https://fonts.google.com/noto/specimen/Noto+Emoji",
       "license": "OFL-1.1",
       "file": "fonts/google-noto-emoji-mono.woff2",
-      "bytes": 1042988,
-      "sha256": "30b2a4b19b0aee3c3669c01b17cae13cfbab7ff014925f18916d9e92dec7a9ba",
+      "bytes": 1042740,
+      "sha256": "c1aaa5ffade1d0a1537efd861660397a1e6c53ce367c1fac913ee9f6e84c6e57",
       "upstream": {
         "url": "https://github.com/google/fonts/raw/main/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf"
       },
@@ -124,13 +124,13 @@
     },
     {
       "id": "google-blobmoji",
-      "title": "Google Blobmoji",
+      "title": "Blobmoji",
       "description": "A revival of Google's classic 'gumdrop' or 'blob' style emojis from older Android versions, updated to support modern Unicode standards.",
       "homepage": "https://github.com/C1710/blobmoji",
       "license": "Apache-2.0 / OFL-1.1",
       "file": "fonts/google-blobmoji.woff2",
-      "bytes": 6742792,
-      "sha256": "db3500bf5acb0faafdc08972e1f87ffa28ddaaf723a9a9655bd1122529cbea7d",
+      "bytes": 6742816,
+      "sha256": "df74ba533786ea59fc6ab76628e5220f26fefa216684c88cde231b4ca1a287b3",
       "upstream": {
         "url": "https://github.com/C1710/blobmoji/raw/refs/heads/main/fonts/Blobmoji.ttf"
       },
@@ -149,8 +149,8 @@
       "homepage": "https://github.com/mozilla/twemoji-colr",
       "license": "CC-BY-4.0 (artwork) / MIT (code)",
       "file": "fonts/twemoji.woff2",
-      "bytes": 460304,
-      "sha256": "126d4ca0223f4a843c12a7b0a156a6170d0904780dfab4fef205e761ee677d77",
+      "bytes": 460192,
+      "sha256": "28d9d621aae13b10fdf04d6cf0d5953aa73c87d8b96e683a36e9c7d5a902c5cf",
       "upstream": {
         "url": "https://github.com/mozilla/twemoji-colr/releases/download/v0.7.0/Twemoji.Mozilla.ttf"
       },
@@ -169,8 +169,8 @@
       "homepage": "https://openmoji.org/",
       "license": "CC-BY-SA-4.0",
       "file": "fonts/openmoji-color.woff2",
-      "bytes": 1014960,
-      "sha256": "43e02250f7fa9f2088f19dbd7dad7c582ce4de1655c3e1323a6ecaa05f43ae37",
+      "bytes": 1015276,
+      "sha256": "11b99cdfc905a1ab86544876375ed91df1c60d2a7bd163ee8fd0ebef34d434d2",
       "upstream": {
         "url": "https://github.com/hfg-gmuend/openmoji/raw/refs/heads/master/font/OpenMoji-color-colr0_svg/OpenMoji-color-colr0_svg.woff2"
       },
@@ -188,8 +188,8 @@
       "homepage": "https://openmoji.org/",
       "license": "CC-BY-SA-4.0",
       "file": "fonts/openmoji-black.woff2",
-      "bytes": 553144,
-      "sha256": "11f2feba9f9d8ed64d6365426ad07e6e1144a5aed1340e816cfb22b6fd32a5a1",
+      "bytes": 552136,
+      "sha256": "db9b4f83b0b2daa3902133411c96000982d2c6d56fb198c7ebc866f6b3921afc",
       "upstream": {
         "url": "https://github.com/hfg-gmuend/openmoji/raw/refs/heads/master/font/OpenMoji-black-glyf/OpenMoji-black-glyf.woff2"
       },
@@ -206,8 +206,8 @@
       "homepage": "https://github.com/mozilla/fxemoji",
       "license": "Apache-2.0 (code) / CC-BY-4.0 (artwork)",
       "file": "fonts/firefox-os-emoji.woff2",
-      "bytes": 273204,
-      "sha256": "b0f4289205d82a3fccd1e61fdc27881c2832db01f9ae8237f96ae2b53bb39ff7",
+      "bytes": 273556,
+      "sha256": "c0506b5d8e73e8a34319c9d290da3c38df940b2310bfb4b265e7cebbf84fda56",
       "upstream": {
         "url": "https://raw.githubusercontent.com/mozilla/fxemoji/master/dist/FirefoxEmoji/FirefoxEmoji.ttf"
       },

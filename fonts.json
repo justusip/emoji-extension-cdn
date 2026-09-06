@@ -26,7 +26,7 @@
     },
     {
       "id": "microsoft-fluent-color-emoji",
-      "title": "Microsoft Fluent 3D",
+      "title": "Fluent 3D",
       "description": "Microsoft's modern 3D-style emoji set for Windows 11, featuring soft gradients and rounded, bubbly forms.",
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
@@ -36,7 +36,7 @@
     },
     {
       "id": "microsoft-fluent-flat-emoji",
-      "title": "Microsoft Fluent Flat",
+      "title": "Fluent Flat",
       "description": "The flat variant of Microsoft's Fluent set — the same artwork drawn without gradients or depth, for a cleaner 2D look.",
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
@@ -46,7 +46,7 @@
     },
     {
       "id": "microsoft-fluent-high-contrast-emoji",
-      "title": "Microsoft Fluent High Contrast",
+      "title": "Fluent High Contrast",
       "description": "Microsoft's accessibility variant: bold monochrome line art that stays legible at small sizes and in high-contrast modes.",
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
@@ -57,7 +57,7 @@
     },
     {
       "id": "google-noto-color-emoji",
-      "title": "Google Noto Color",
+      "title": "Noto Color",
       "description": "Google's official color emoji font used on Android and ChromeOS. Known for high legibility and a clean, modern style.",
       "homepage": "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
       "license": "OFL-1.1",
@@ -77,7 +77,7 @@
     },
     {
       "id": "google-blobmoji",
-      "title": "Google Blobmoji",
+      "title": "Blobmoji",
       "description": "A revival of Google's classic 'gumdrop' or 'blob' style emojis from older Android versions, updated to support modern Unicode standards.",
       "homepage": "https://github.com/C1710/blobmoji",
       "license": "Apache-2.0 / OFL-1.1",
