@@ -36,8 +36,18 @@ def main():
         print("WARNING: branch URLs are only cached for 12 hours and can change "
               "under your users. Tag a release and pin that instead.")
 
+    # Helper fonts are published but never offered as styles; they are
+    # referenced by the styles that borrow glyphs from them.
+    by_id = {r["id"]: r for r in manifest["fonts"]}
+
+    def cdn_url(record):
+        return CDN.format(user=args.user, repo=args.repo,
+                          tag=args.tag, path=record["file"])
+
     definitions = []
     for record in manifest["fonts"]:
+        if record.get("helper"):
+            continue
         entry = {
             "id": record["id"],
             "title": record["title"],
@@ -45,8 +55,7 @@ def main():
             "homepage": record["homepage"],
             "license": record["license"],
             # Served from the CDN; nothing is bundled in the extension.
-            "path": CDN.format(user=args.user, repo=args.repo,
-                               tag=args.tag, path=record["file"]),
+            "path": cdn_url(record),
             "bytes": record["bytes"],
             # Static preview strip bundled with the extension, so the chooser
             # can show every style without downloading a single font.
@@ -54,6 +63,11 @@ def main():
         }
         if record.get("monochrome"):
             entry["monochrome"] = True
+        # Sets with no flag glyphs of their own get them from a helper font,
+        # layered in as a second @font-face limited to regional indicators.
+        helper = by_id.get(record.get("flags_from") or "")
+        if helper:
+            entry["flagsPath"] = cdn_url(helper)
         definitions.append(entry)
 
     out = os.path.abspath(args.out)

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-06T06:32:35Z",
-  "total_bytes": 26136764,
+  "generated": "2026-09-06T06:54:28Z",
+  "total_bytes": 26613920,
   "fonts": [
     {
       "id": "apple-emoji",
@@ -121,6 +121,27 @@
       "glyphs": 1891,
       "has_gsub": true,
       "monochrome": true
+    },
+    {
+      "id": "noto-flags-only",
+      "title": "Noto Flags",
+      "description": "Country flag glyphs only. Not a selectable style: it backs sets that ship no flags of their own.",
+      "homepage": "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
+      "license": "OFL-1.1",
+      "file": "fonts/noto-flags-only.woff2",
+      "bytes": 477156,
+      "sha256": "2168eb6a635828bffa20e6c7e8292188e61511fc25b6e13f9f8bb431b6742338",
+      "upstream": {
+        "url": "https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji-flagsonly.ttf"
+      },
+      "color_tables": [
+        "CBDT"
+      ],
+      "codepoints": 36,
+      "glyphs": 279,
+      "has_gsub": true,
+      "bitmap_ppem": 109,
+      "helper": true
     },
     {
       "id": "google-blobmoji",

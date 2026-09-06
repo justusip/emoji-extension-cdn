@@ -133,6 +133,11 @@ def build_one(entry, refresh=False, max_bytes=19_000_000):
     # chooser preview stays visible against a dark background.
     if entry.get("monochrome"):
         record["monochrome"] = True
+    # Not a selectable style: a support font other styles borrow glyphs from.
+    if entry.get("helper"):
+        record["helper"] = True
+    if entry.get("flags_from"):
+        record["flags_from"] = entry["flags_from"]
 
     # A font meant to be in colour but carrying no colour table renders as
     # black outlines — exactly the bug the old OT-SVG Twemoji build had.

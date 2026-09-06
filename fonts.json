@@ -31,7 +31,8 @@
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
       "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiColor.ttf",
-      "note": "No flags: the Fluent set has no regional indicator glyphs.",
+      "note": "No flags: the Fluent set has no regional indicator glyphs, so country flags come from the noto-flags-only helper.",
+      "flags_from": "noto-flags-only",
       "optimize": { "prefer_color_table": "COLR" }
     },
     {
@@ -41,7 +42,8 @@
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
       "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiFlat.ttf",
-      "note": "No flags: the Fluent set has no regional indicator glyphs.",
+      "note": "No flags: the Fluent set has no regional indicator glyphs, so country flags come from the noto-flags-only helper.",
+      "flags_from": "noto-flags-only",
       "optimize": { "prefer_color_table": "COLR" }
     },
     {
@@ -52,7 +54,8 @@
       "license": "MIT (artwork: Microsoft)",
       "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiHighContrast.ttf",
       "monochrome": true,
-      "note": "No flags: the Fluent set has no regional indicator glyphs.",
+      "note": "No flags: the Fluent set has no regional indicator glyphs, so country flags come from the noto-flags-only helper.",
+      "flags_from": "noto-flags-only",
       "optimize": { "prefer_color_table": "COLR" }
     },
     {
@@ -74,6 +77,16 @@
       "url": "https://github.com/google/fonts/raw/main/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf",
       "monochrome": true,
       "optimize": {}
+    },
+    {
+      "id": "noto-flags-only",
+      "title": "Noto Flags",
+      "description": "Country flag glyphs only. Not a selectable style: it backs sets that ship no flags of their own.",
+      "homepage": "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
+      "license": "OFL-1.1",
+      "url": "https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji-flagsonly.ttf",
+      "helper": true,
+      "optimize": { "quantize_colors": 256 }
     },
     {
       "id": "google-blobmoji",
