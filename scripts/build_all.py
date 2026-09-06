@@ -91,7 +91,12 @@ def build_one(entry, refresh=False, max_bytes=19_000_000):
     else:
         url = entry["url"]
         ext = ".woff2" if url.lower().endswith(".woff2") else ".ttf"
-        src = download(url, os.path.join(CACHE, fid + ext), refresh=refresh)
+        # Key the cache on the URL, not just the font id. Otherwise pointing an
+        # existing entry at a new upstream (as when Noto moved from the CBDT
+        # build to COLRv1) silently reuses the old download and "rebuilds" the
+        # font you were trying to replace.
+        stamp = hashlib.sha256(url.encode("utf-8")).hexdigest()[:8]
+        src = download(url, os.path.join(CACHE, "{}-{}{}".format(fid, stamp, ext)), refresh=refresh)
 
         report = opt.OptimizeReport()
         font = opt.load(src)
@@ -124,10 +129,15 @@ def build_one(entry, refresh=False, max_bytes=19_000_000):
     record.update(describe(out))
     if entry.get("note"):
         record["note"] = entry["note"]
+    # Drawn in a single dark colour: the extension needs to know so the
+    # chooser preview stays visible against a dark background.
+    if entry.get("monochrome"):
+        record["monochrome"] = True
 
-    # A colour emoji font with no colour table renders as black outlines.
-    # That is exactly the bug the old OT-SVG Twemoji build had, so guard it.
-    if fid != "openmoji-black" and not record["color_tables"]:
+    # A font meant to be in colour but carrying no colour table renders as
+    # black outlines — exactly the bug the old OT-SVG Twemoji build had.
+    # Styles declared monochrome are supposed to look like that.
+    if not entry.get("monochrome") and not record["color_tables"]:
         raise SystemExit("FAIL: {} has no browser-renderable colour table".format(fid))
 
     return record

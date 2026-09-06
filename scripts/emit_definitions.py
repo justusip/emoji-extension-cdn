@@ -38,7 +38,7 @@ def main():
 
     definitions = []
     for record in manifest["fonts"]:
-        definitions.append({
+        entry = {
             "id": record["id"],
             "title": record["title"],
             "description": record["description"],
@@ -51,7 +51,10 @@ def main():
             # Static preview strip bundled with the extension, so the chooser
             # can show every style without downloading a single font.
             "preview": "/previews/{}.png".format(record["id"]),
-        })
+        }
+        if record.get("monochrome"):
+            entry["monochrome"] = True
+        definitions.append(entry)
 
     out = os.path.abspath(args.out)
     os.makedirs(os.path.dirname(out), exist_ok=True)

@@ -7,7 +7,10 @@
     "jsDelivr hard limits (https://github.com/jsdelivr/jsdelivr#configuring-a-default-file):",
     "  - single file (GitHub):  20 MB",
     "  - whole repo at a tag:  150 MB",
-    "Every entry must stay under max_bytes; build_all.py fails the build otherwise."
+    "Every entry must stay under max_bytes; build_all.py fails the build otherwise.",
+    "",
+    "`monochrome: true` marks styles drawn in a single dark colour. The extension",
+    "uses it to keep their chooser previews legible on a dark background."
   ],
   "max_file_bytes": 19000000,
   "max_total_bytes": 140000000,
@@ -23,21 +26,54 @@
     },
     {
       "id": "microsoft-fluent-color-emoji",
-      "title": "Microsoft Fluent Color Emoji",
+      "title": "Microsoft Fluent 3D",
       "description": "Microsoft's modern 3D-style emoji set for Windows 11, featuring soft gradients and rounded, bubbly forms.",
       "homepage": "https://github.com/microsoft/fluentui-emoji",
       "license": "MIT (artwork: Microsoft)",
       "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiColor.ttf",
+      "note": "No flags: the Fluent set has no regional indicator glyphs.",
+      "optimize": { "prefer_color_table": "COLR" }
+    },
+    {
+      "id": "microsoft-fluent-flat-emoji",
+      "title": "Microsoft Fluent Flat",
+      "description": "The flat variant of Microsoft's Fluent set — the same artwork drawn without gradients or depth, for a cleaner 2D look.",
+      "homepage": "https://github.com/microsoft/fluentui-emoji",
+      "license": "MIT (artwork: Microsoft)",
+      "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiFlat.ttf",
+      "note": "No flags: the Fluent set has no regional indicator glyphs.",
+      "optimize": { "prefer_color_table": "COLR" }
+    },
+    {
+      "id": "microsoft-fluent-high-contrast-emoji",
+      "title": "Microsoft Fluent High Contrast",
+      "description": "Microsoft's accessibility variant: bold monochrome line art that stays legible at small sizes and in high-contrast modes.",
+      "homepage": "https://github.com/microsoft/fluentui-emoji",
+      "license": "MIT (artwork: Microsoft)",
+      "url": "https://tetunori.github.io/fluent-emoji-webfont/dist/FluentEmojiHighContrast.ttf",
+      "monochrome": true,
+      "note": "No flags: the Fluent set has no regional indicator glyphs.",
       "optimize": { "prefer_color_table": "COLR" }
     },
     {
       "id": "google-noto-color-emoji",
-      "title": "Google Noto Color Emoji",
+      "title": "Google Noto Color",
       "description": "Google's official color emoji font used on Android and ChromeOS. Known for high legibility and a clean, modern style.",
       "homepage": "https://fonts.google.com/noto/specimen/Noto+Color+Emoji",
       "license": "OFL-1.1",
-      "url": "https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf",
-      "optimize": { "quantize_colors": 256 }
+      "url": "https://github.com/googlefonts/noto-emoji/raw/main/fonts/Noto-COLRv1.ttf",
+      "note": "COLRv1 vector build rather than the CBDT bitmap build: a quarter of the size and sharp at any size, with identical coverage.",
+      "optimize": { "prefer_color_table": "COLR" }
+    },
+    {
+      "id": "google-noto-emoji-mono",
+      "title": "Noto Emoji Mono",
+      "description": "Google's monochrome outline emoji. They take on the surrounding text colour, so they sit in a page like typography rather than pictures.",
+      "homepage": "https://fonts.google.com/noto/specimen/Noto+Emoji",
+      "license": "OFL-1.1",
+      "url": "https://github.com/google/fonts/raw/main/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf",
+      "monochrome": true,
+      "optimize": {}
     },
     {
       "id": "google-blobmoji",
@@ -55,7 +91,7 @@
       "homepage": "https://github.com/mozilla/twemoji-colr",
       "license": "CC-BY-4.0 (artwork) / MIT (code)",
       "url": "https://github.com/mozilla/twemoji-colr/releases/download/v0.7.0/Twemoji.Mozilla.ttf",
-      "note": "COLR/CPAL build. The upstream jdecked/twemoji webfont is OT-SVG only, which Chrome does not render — it falls back to black outlines. Do not switch back to it.",
+      "note": "COLR/CPAL build. The upstream jdecked/twemoji webfont is OT-SVG only, which Chrome does not render — it falls back to black outlines. Do not switch back to it. This build is Twemoji 14, so Unicode 15+ additions fall back to the system font.",
       "optimize": { "prefer_color_table": "COLR" }
     },
     {
@@ -74,7 +110,18 @@
       "homepage": "https://openmoji.org/",
       "license": "CC-BY-SA-4.0",
       "url": "https://github.com/hfg-gmuend/openmoji/raw/refs/heads/master/font/OpenMoji-black-glyf/OpenMoji-black-glyf.woff2",
+      "monochrome": true,
       "optimize": {}
+    },
+    {
+      "id": "firefox-os-emoji",
+      "title": "Firefox OS Emoji",
+      "description": "Mozilla's emoji set from Firefox OS (2015). A simple, friendly flat style — it predates Unicode 14, so the newest emoji fall back to your system font.",
+      "homepage": "https://github.com/mozilla/fxemoji",
+      "license": "Apache-2.0 (code) / CC-BY-4.0 (artwork)",
+      "url": "https://raw.githubusercontent.com/mozilla/fxemoji/master/dist/FirefoxEmoji/FirefoxEmoji.ttf",
+      "note": "Coverage stops around Unicode 8; no skin tone modifiers or recent additions.",
+      "optimize": { "prefer_color_table": "COLR" }
     }
   ]
 }

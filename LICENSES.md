@@ -39,15 +39,21 @@ which republishes the macOS system font.
 
 | Font | Licence | Attribution required |
 |---|---|---|
-| Microsoft Fluent Color Emoji | MIT | Microsoft |
+| Microsoft Fluent 3D | MIT | Microsoft |
+| Microsoft Fluent Flat | MIT | Microsoft |
+| Microsoft Fluent High Contrast | MIT | Microsoft |
 | Google Noto Color Emoji | OFL-1.1 | Google |
+| Noto Emoji Mono | OFL-1.1 | Google |
 | Google Blobmoji | Apache-2.0 / OFL-1.1 | Google, C1710 |
 | Twemoji | CC-BY-4.0 (artwork), MIT (code) | **Yes** — Twitter / jdecked |
 | OpenMoji Color | CC-BY-SA-4.0 | **Yes** — OpenMoji |
 | OpenMoji Black | CC-BY-SA-4.0 | **Yes** — OpenMoji |
+| Firefox OS Emoji | Apache-2.0 (code), CC-BY-4.0 (artwork) | **Yes** — Mozilla |
 
-Three of these require attribution in anything that ships them:
+Four of these require attribution in anything that ships them:
 
+- **Firefox OS Emoji** — the code is Apache-2.0 and the artwork CC-BY 4.0.
+  Credit Mozilla.
 - **Twemoji** — CC-BY 4.0. Credit Twitter and the twemoji project.
 - **OpenMoji** (both variants) — CC-BY-SA 4.0. Credit openmoji.org. Note the
   **ShareAlike** clause: derivative *artwork* must be shared alike. Serving the
